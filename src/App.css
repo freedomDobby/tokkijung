@@ -1,38 +1,181 @@
-.App {
+/*normalrizing*/
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  color: inherit;
+}
+
+.head {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  margin: 0px auto;
+  z-index: 300;
+  /* border: 5px solid red; */
+}
+
+.meun-bar {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  background-color: rgba(51, 24, 19, 0.8);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   text-align: center;
+  position: relative;
+  /* overflow: hidden; */
+  opacity: 70%;
+  z-index: 1000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.head > .meun-bar > div {
+  margin: 20px 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.meun-body {
+  /* border: 3px solid blue; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title-1 {
+  color: #fff;
+  /* font-family: "Roboto", "Noto Sans KR", sans-serif; */
+  text-align: left;
+  border: 0px solid #fff;
+  font-weight: 400;
+  display: flex;
+  font-size: 18px;
+  /* border: 2px solid red; */
+  height: 100%;
+  padding: 0 100px;
+  position: absolute;
+  right: 15%;
+}
+
+.head > .meun-bar > .title-1 > li {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 20px;
+  /* border: 1px solid blue; */
+  height: 100%;
+  position: relative;
+}
+
+.fixbg {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 300;
+  background: rgba(51, 24, 19, 0.9);
+}
+
+.sub {
+  display: none;
+}
+
+/* .meun-body > .title-1:hover ~ .fixbg {
+  display: block;
+  z-index: 0;
+} */
+
+.title-1:hover > li > .sub {
+  display: block;
+  border: 1px solid black;
+  position: absolute;
+  top: 75%;
+  width: 100%;
+  left: 0;
+}
+
+.title-1:hover > li > .sub > li {
+  word-wrap: nowrap;
+  font-size: 13px;
+  padding-left: 0;
+  text-align: left;
+}
+
+.title-1:hover > li > .sub > li:hover {
+  color: red;
+}
+
+.main_slide_m {
+  position: relative;
+}
+
+.main_slide_m > img {
+  width: 100%;
+  height: 960px;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+}
+
+.main_vtxt_logo {
+  position: absolute;
+  top: 300px;
+  left: 43%;
+  z-index: 600;
+}
+
+.ment {
+  width: 750px;
+  height: 500px;
+  position: absolute;
+  z-index: 500;
+  text-align: center;
+  color: #fff;
+  top: 405px;
+  left: 30%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0%;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.main_vtxt1 {
+  font-size: 55px;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main_vtxt2 {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.main_vtxt3 {
+  margin-top: 50px;
+  width: 60%;
+  position: absolute;
+  top: 30%;
+  left: 16.7%;
+  border: 1px solid white;
+}
+
+.main_vtxt4 {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  margin-left: -160px;
+  width: 300px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 1);
+  z-index: 150;
+  letter-spacing: -0.02em;
+  padding-left: 5px;
 }
