@@ -44,7 +44,7 @@ function Main() {
               </ul>
             </li>
             <li>
-              매장
+              매장z
               <ul className="sub">
                 <li>매장찾기</li>
               </ul>

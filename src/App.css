@@ -132,7 +132,7 @@ li {
 
 .ment {
   width: 750px;
-  height: 500px;
+  height: 400px;
   position: absolute;
   z-index: 500;
   text-align: center;
@@ -143,11 +143,13 @@ li {
   flex-direction: column;
   padding: 0%;
   position: relative;
+  /* border: 2px solid gold; */
 }
 
 .main_vtxt1 {
   font-size: 55px;
   font-weight: 700;
+  margin-top: 0;
 }
 
 .main_vtxt2 {
@@ -158,10 +160,9 @@ li {
 .main_vtxt3 {
   margin-top: 50px;
   width: 60%;
-  position: absolute;
-  top: 30%;
-  left: 16.7%;
+  /* position: absolute; */
   border: 1px solid white;
+  margin-left: 130px;
 }
 
 .main_vtxt4 {
